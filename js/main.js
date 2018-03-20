@@ -55,7 +55,7 @@ function updateOutput(result) {
     if (inputTextarea.value.length < 1) {
         downloadContainer.style.display = "none";
     } else {
-        downloadContainer.style.display = "inline";
+        downloadContainer.style.display = "block";
     }
 }
 
