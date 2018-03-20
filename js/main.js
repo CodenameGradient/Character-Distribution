@@ -1,8 +1,9 @@
 // variables
 var inputTextarea = document.getElementById("inputString"),
     outputContainer = document.getElementById("output"),
-    caseToggle = document.getElementById("preserveCase")
-    downloadContainer = document.getElementById("download");
+    caseToggle = document.getElementById("preserveCase"),
+    downloadContainer = document.getElementById("download"),
+    clearButton = document.getElementById("clearInput");
 
 /**
  * Updates the output based on the input
@@ -112,7 +113,13 @@ inputTextarea.addEventListener("input", function(e) {
     updateOutput(processInput());
 });
 
-// attach even listener to the preserve case checkbox
+// attach event listener to the preserve case checkbox
 caseToggle.addEventListener("change", function(e) {
+    updateOutput(processInput());
+});
+
+// attach event listener to the clear button
+clearInput.addEventListener("click", function(e) {
+    inputTextarea.value = "";
     updateOutput(processInput());
 });

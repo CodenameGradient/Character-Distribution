@@ -19,6 +19,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.1.0-4",
     "electron": "^1.8.4",
+    "electron-packager": "^11.1.0",
     "npm": "^5.7.1"
   }
 }
