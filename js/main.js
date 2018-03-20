@@ -1,7 +1,8 @@
 // variables
 var inputTextarea = document.getElementById("inputString"),
     outputContainer = document.getElementById("output"),
-    caseToggle = document.getElementById("preserveCase");
+    caseToggle = document.getElementById("preserveCase")
+    downloadContainer = document.getElementById("download");
 
 /**
  * Updates the output based on the input
@@ -50,6 +51,12 @@ function updateOutput(result) {
 
         outputList.innerHTML += '<li class="item"><span class="index">' + decodeURI(encI) + '</span> <span class="count">' + result[i] + '</span></li>';
     }
+
+    if (inputTextarea.value.length < 1) {
+        downloadContainer.style.display = "none";
+    } else {
+        downloadContainer.style.display = "inline";
+    }
 }
 
 /**
@@ -75,7 +82,26 @@ function download(type) {
     var result = processInput();
 
     if (Object.keys(result).length) {
-        alert("TODO: make this work!");
+        
+        var linkElement = document.createElement("a");
+
+        if (type === "csv") {
+            var csvString = "character,count%0A";
+            for (i in result) {
+                csvString += i + "," + result[i] + "%0A";
+            }
+            linkElement.setAttribute("href", "data:text/plain;charset=utf-8," + csvString);
+            linkElement.setAttribute("download", "character-distribution.csv");
+        } else if (type === "json") {
+            linkElement.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(JSON.stringify(result)));
+            linkElement.setAttribute("download", "character-distribution.json");
+        }
+
+        linkElement.style.display = "none";
+        document.body.appendChild(linkElement);
+        linkElement.click();
+        document.body.removeChild(linkElement);
+
     } else {
         alert("Enter some text first!");
     }
