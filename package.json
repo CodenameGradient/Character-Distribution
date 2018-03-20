@@ -1,0 +1,23 @@
+{
+  "name": "character-distribution",
+  "version": "1.0.0",
+  "description": "A simple app that processes strings to tell you how many different characters exist.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodenameGradient/Character-Distribution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodenameGradient/Character-Distribution/issues"
+  },
+  "homepage": "https://github.com/CodenameGradient/Character-Distribution#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0-4",
+    "electron": "^1.8.4"
+  }
+}

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #81C784;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+html, body, form {
+    padding: 0;
+    margin: 0;
+}
+
+body > header,
+body > section,
+body > footer {
+    padding: 1em;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 1.25em;
+}
+h2 {
+    font-size: 1em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#input {
+    text-align: center;
+    font-size: .75em;
+}
+#input textarea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#output li {
+    list-style-type: none;
+    display: inline-block;
+    width: 20%;
+}
+#output .index {
+    border: 1px solid #333;
+    border-left: 4px solid #111;
+    border-right: 4px solid #444;
+    border-bottom: 10px solid #333;
+    background-color: #ccc;
+    border-radius: 3px;
+    padding: .25em;
+    margin-bottom: .25em;
+    display: inline-block;
+    min-width: 25px;
+    text-align: center;
+}
+
+#download {
+    width: 100%;
+    text-align: center;
+    font-size: .75em;
+    margin-bottom: 10em;
+}
+#download ul {
+    margin: 0;
+    padding: 0;
+}
+#download li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 1em;
+    padding: 0;
+}
+#download a {
+    color: #333;
+    text-decoration: none;
+}
+#download a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: .75em;
+    border-top: 3px solid #333;
+    background-color: #81C784;
+}
+footer i {
+    font-size: 1.5em;
+}
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

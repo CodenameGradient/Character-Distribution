@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Character Distribution</title>
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Character Distribution</h1>
+        </header>
+        
+        <section id="input">
+            <form action="javascript:void(0);">
+                <textarea id="inputString" placeholder="Enter some text..."></textarea>
+                <label>Preserve Case:<input type="checkbox" id="preserveCase"></label>
+            </form>
+        </section>
+        
+        <section id="output">
+        </section>
+
+        <section id="download">
+            <ul>
+                <li><a href="javascript:download('csv');" target="_blank" title="Save CSV"><i class="fas fa-save"></i> CSV</a></li>
+                <li><a href="javascript:download('json');" target="_blank" title="Save JSON"><i class="fas fa-save"></i> JSON</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Built with 
+                <i class="fab fa-chrome" title="Chrome"></i>
+                <i class="fab fa-css3" title="CSS3"></i>
+                <i class="fab fa-font-awesome" title="Font Awesome"></i>
+                <i class="fab fa-fort-awesome" title="Fort Awesome"></i>
+                <i class="fab fa-git-square" title="Git"></i>
+                <i class="fab fa-github" title="GitHub"></i>
+                <i class="fab fa-google" title="Google"></i>
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-linux" title="Linux"></i>
+                <i class="fab fa-microsoft" title="Microsoft"></i>
+                <i class="fab fa-npm" title="NPM"></i>
+                <i class="fab fa-node-js" title="NodsJS"></i>
+                and Electron
+            </p>
+
+            <p>Created by <a href="https://codenamegradient.com" target="_blank">Codename Gradient</a>, <a href="https://github.com/CodenameGradient/Character-Distribution" target="_blank">view source on GitHub</a>.</p>
+        </footer>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
