@@ -5,7 +5,26 @@ A simple demonstration Node.js application that displays the number of character
 
 ## Getting Started
 (using the terminal)
-1. Clone this repository: git clone https://github.com/sinerasis/character-distribution.git
-2. Change your working directory to the cloned repository: cd character-distributon
-3. Install dependencies via npm: npm install
-4. Run the application: npm start
+1. Clone this repository:
+
+```
+git clone https://github.com/sinerasis/character-distribution.git
+```
+
+2. Change your working directory to the cloned repository:
+
+```
+cd character-distributon
+```
+
+3. Install dependencies via npm:
+
+```
+npm install
+```
+
+4. Run the application:
+
+```
+npm start
+```
